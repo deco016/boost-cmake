@@ -1,4 +1,4 @@
-# Boost CMake [![Build Status](https://travis-ci.org/Orphis/boost-cmake.svg?branch=master)](https://travis-ci.org/Orphis/boost-cmake)
+# Boost CMake [![Build Status](https://github.com/deco016/boost-cmake.svg?branch=master)](https://github.com/deco016/boost-cmake)
 
 ## Synopsis
 
@@ -8,7 +8,7 @@ Easy Boost integration in CMake projects!
 
 Install the submodule in your project structure:
 ```
-git submodule add https://github.com/Orphis/boost-cmake.git
+git submodule add https://github.com/deco016/boost-cmake.git
 ```
 Use it! In you CMakeLists.txt file:
 
@@ -20,7 +20,8 @@ target_link_libraries(lib_using_header_only PUBLIC Boost::boost)
 ```
 
 ## Configuration
-
+Boost test
+You can easile disable building of tests by setting option BOOST_DISABLE_TESTS
 Boost will automatically be downloaded from GitHub as a minified archive created with the `repack.sh` script.
 
 If that is not acceptable to you, you can use an alternate Boost version, apply custom patches or just mirror the current archive in your internal network like so:

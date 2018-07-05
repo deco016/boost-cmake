@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(Boost-CMake)
 
+option(BOOST_DISABLE_TESTS "Do not build test targets, even if building standalone" OFF)
 option(BOOST_DOWNLOAD_TO_BINARY_DIR "Prefer downloading Boost to the binary directory instead of source directory" OFF)
 set(BOOST_URL "https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.bz2" CACHE STRING "Boost download URL")
 set(BOOST_URL_SHA256 "5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9" CACHE STRING "Boost download URL SHA256 checksum")
